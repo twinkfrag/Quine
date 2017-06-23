@@ -6,12 +6,10 @@ class P
 {{
 	static void Main()
 	{{
-		var s = @""{0}"";
-		var q = '\u0022'.ToString();
-        System.Console.WriteLine(s, s.Replace(q, q + q));
+		var s = @{1}{0}{1};
+		System.Console.Write(s, s, '\u0022');
 	}}
 }}";
-		var q = '\u0022'.ToString();
-        System.Console.WriteLine(s, s.Replace(q, q + q));
+		System.Console.Write(s, s, '\u0022');
 	}
 }
